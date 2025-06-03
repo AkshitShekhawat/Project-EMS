@@ -46,7 +46,7 @@ It allows admins to perform full CRUD operations while regular users have view-o
 1. Navigate to the frontend directory
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
-4. Open `http://localhost:5173` in your browser
+4. Open `http://localhost:3000` in your browser
 
 ## 👥 Roles
 
