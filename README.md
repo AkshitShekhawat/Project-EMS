@@ -54,7 +54,7 @@ It allows admins to perform full CRUD operations while regular users have view-o
 - **User:** View employees only
 
 ## 📸 Screenshots
-*(UI or API test available screenshots here)*
+*(UI or API test screenshots here)*
 
 ![image](https://github.com/user-attachments/assets/4ff3da07-57a3-4583-8510-bffc29d44f89)
 
