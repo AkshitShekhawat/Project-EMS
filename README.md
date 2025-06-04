@@ -46,7 +46,7 @@ It allows admins to perform full CRUD operations while regular users have view-o
 1. Navigate to the frontend directory
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
-4. Open `http://localhost:5173` in your browser
+4. Open `http://localhost:3000` in your browser
 
 ## 👥 Roles
 
@@ -54,6 +54,9 @@ It allows admins to perform full CRUD operations while regular users have view-o
 - **User:** View employees only
 
 ## 📸 Screenshots
+*(UI or API test screenshots here)*
+
+![image](https://github.com/user-attachments/assets/4ff3da07-57a3-4583-8510-bffc29d44f89)
 
 ![image](https://github.com/user-attachments/assets/165b8bbc-0208-4f0a-b079-90e7781c079a)
 
@@ -64,9 +67,6 @@ It allows admins to perform full CRUD operations while regular users have view-o
 ![image](https://github.com/user-attachments/assets/fe5f29cd-3dcc-43c3-a2c7-486357ecc9c6)
 
 ![image](https://github.com/user-attachments/assets/11f9cb1f-b566-47e0-aeeb-3b80ceb2f09b)
-
-
-*(UI or API test screenshots here if available)*
 
 ## 📄 License
 
