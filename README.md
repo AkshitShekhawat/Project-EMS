@@ -58,7 +58,7 @@ It allows admins to perform full CRUD operations while regular users have view-o
 
 ![image](https://github.com/user-attachments/assets/4ff3da07-57a3-4583-8510-bffc29d44f89)
 
-![image](https://github.com/user-attachments/assets/165b8bbc-0208-4f0a-b079-90e7781c079a)
+![image](https://github.com/user-attachments/assets/d91a2f91-0041-4946-b8e3-ee68d5c5ef66)
 
 ![image](https://github.com/user-attachments/assets/4f1ee8d2-2f9c-41a7-8443-d83dcbd845ce)
 
