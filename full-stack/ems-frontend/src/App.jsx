@@ -1,4 +1,5 @@
 import './App.css'
+import SignupComponent from './Components/SignupComponent'
 import AboutComponent from './Components/AboutComponent'
 import EmployeeComponent from './Components/EmployeeComponent'
 import FooterComponent from './Components/FooterComponent'
@@ -22,7 +23,7 @@ function App() {
           {/* // https://localhost:3000/edit-employee/1 */}
           <Route path='/edit-employee/:id' element = {<EmployeeComponent/>}></Route>
           <Route path='/about' element = {<AboutComponent/>}></Route>
-          <Route path="/signup" element={<div className="container mt-4"><h2>Signup Page Coming Soon</h2></div>} />
+          <Route path="/signup" element={<SignupComponent/>}></Route>
 
        </Routes>
        <FooterComponent/>
