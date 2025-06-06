@@ -11,10 +11,15 @@ function HeaderComponent() {
             Employee Management System
           </a>
 
-          {/* Right side: About Button */}
-          <Link to="/about" className="btn btn-outline-light">
-            About
-          </Link>
+          {/* Right side: About + Signup Buttons */}
+          <div>
+            <Link to="/about" className="btn btn-outline-light me-2">
+              About
+            </Link>
+            <Link to="/signup" className="btn btn-light text-dark">
+              Signup
+            </Link>
+          </div>
         </nav>
       </header>
     </div>

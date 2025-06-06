@@ -22,6 +22,8 @@ function App() {
           {/* // https://localhost:3000/edit-employee/1 */}
           <Route path='/edit-employee/:id' element = {<EmployeeComponent/>}></Route>
           <Route path='/about' element = {<AboutComponent/>}></Route>
+          <Route path="/signup" element={<div className="container mt-4"><h2>Signup Page Coming Soon</h2></div>} />
+
        </Routes>
        <FooterComponent/>
      </BrowserRouter>
