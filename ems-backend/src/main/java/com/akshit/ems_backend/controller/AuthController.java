@@ -7,9 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173") // adjust as needed
+//@CrossOrigin(origins = "http://localhost:3000") // adjust as needed
+@CrossOrigin("*") // Allow all origins for development; adjust in production
 public class AuthController {
 
     @Autowired

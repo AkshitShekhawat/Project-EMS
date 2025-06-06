@@ -1,5 +1,5 @@
+import { signupUser } from '../Services/AuthService'; // ✅ use this
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const SignupComponent = () => {
   const [user, setUser] = useState({
@@ -17,7 +17,8 @@ const SignupComponent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/api/auth/signup", user);
+        console.log("Sending user:", user); 
+      await signupUser(user); // ✅ use service function
       setMessage("Signup successful! Now you can log in.");
     } catch (error) {
       setMessage("Signup failed. Try again or check if user already exists.");
