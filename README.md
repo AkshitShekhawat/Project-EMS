@@ -56,13 +56,15 @@ It allows admins to perform full CRUD operations while regular users have view-o
 ## 📸 Screenshots
 *(UI or API test screenshots here)*
 
-![image](https://github.com/user-attachments/assets/4ff3da07-57a3-4583-8510-bffc29d44f89)
+![image](https://github.com/user-attachments/assets/d91a2f91-0041-4946-b8e3-ee68d5c5ef66)
 
-![image](https://github.com/user-attachments/assets/165b8bbc-0208-4f0a-b079-90e7781c079a)
-
-![image](https://github.com/user-attachments/assets/4f1ee8d2-2f9c-41a7-8443-d83dcbd845ce)
+![image](https://github.com/user-attachments/assets/738e9034-7a43-4aab-9d46-7d6c54dc0a88)
 
 ![image](https://github.com/user-attachments/assets/c8b813c7-86a2-4811-8d03-7927fcdfbe28)
+
+![image](https://github.com/user-attachments/assets/b5fc6310-039d-405a-86a5-e0e5be0147da)
+
+![image](https://github.com/user-attachments/assets/4ff3da07-57a3-4583-8510-bffc29d44f89)
 
 ![image](https://github.com/user-attachments/assets/fe5f29cd-3dcc-43c3-a2c7-486357ecc9c6)
 
