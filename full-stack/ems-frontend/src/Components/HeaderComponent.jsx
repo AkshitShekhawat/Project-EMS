@@ -13,6 +13,7 @@ function HeaderComponent() {
 
           {/* Right side: About + Signup Buttons */}
           <div>
+            <Link to='/' className="btn btn-outline-light me-2">Home</Link>
             <Link to="/about" className="btn btn-outline-light me-2">
               About
             </Link>

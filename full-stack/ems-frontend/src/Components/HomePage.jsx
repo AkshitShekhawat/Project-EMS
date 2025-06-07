@@ -15,7 +15,7 @@ function HomePage() {
       <HomeHeaderComponent />
 
       <div style={{
-        height: '80vh',
+        minHeight: '70vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -35,11 +35,40 @@ function HomePage() {
             border: 'none',
             borderRadius: '84px',
             cursor: 'pointer',
-            marginTop: '20px'
+            marginTop: '20px',
+            marginBottom: '40px'
           }}
         >
           GetStarted With Demo
         </button>
+
+        {/* Image Gallery Section */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '20px',
+          flexWrap: 'wrap',
+          maxWidth: '1000px'
+        }}>
+          {[1, 2, 3, 4].map((img, index) => (
+            <div key={index} style={{
+              borderRadius: '12px',
+              overflow: 'hidden',
+              boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+              width: '200px'
+            }}>
+              <img
+                src={`/images/img${img}.png`}
+                alt={`Employee ${img}`}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block'
+                }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <FooterComponent />
