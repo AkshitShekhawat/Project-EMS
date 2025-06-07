@@ -17,7 +17,7 @@ function HeaderComponent() {
               About
             </Link>
             <Link to="/signup" className="btn btn-light text-dark">
-              Signup
+              Signup/Login
             </Link>
           </div>
         </nav>

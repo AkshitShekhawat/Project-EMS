@@ -1,0 +1,41 @@
+import './App.css'
+import HomePage from './Components/HomePage'
+import SignupComponent from './Components/SignupComponent'
+import AboutComponent from './Components/AboutComponent'
+import EmployeeComponent from './Components/EmployeeComponent'
+import FooterComponent from './Components/FooterComponent'
+import HeaderComponent from './Components/HeaderComponent'
+import ListEmployeeComponent from './Components/ListEmployeeComponent'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
+function App() {
+
+  return (
+    <>
+     <BrowserRouter>
+       <HeaderComponent/>
+       <Routes>
+        {/* // https://localhost:3000 */}
+        <Route path = '/' element = {<HomePage />}></Route>
+          {/* <Route path='/' element = {<ListEmployeeComponent />}> </Route> */}
+           {/* Employee-related routes */}
+          {/* // Whenever user hit this url in browser https://localhost:3000/employees then we have to display ListEmployeeComponent */}
+          <Route path = '/employees' element = {<ListEmployeeComponent />} ></Route>
+          {/* // https://localhost:3000/add-employee */}
+          <Route path='/add-employee' element = {<EmployeeComponent/>} ></Route>
+          {/* // https://localhost:3000/edit-employee/1 */}
+          <Route path='/edit-employee/:id' element = {<EmployeeComponent/>}></Route>
+
+           {/* Other pages */}
+          <Route path='/about' element = {<AboutComponent/>}></Route>
+          <Route path="/signup" element={<SignupComponent/>}></Route>
+
+
+       </Routes>
+       <FooterComponent/>
+     </BrowserRouter>
+    </>
+  )
+}
+
+export default App
