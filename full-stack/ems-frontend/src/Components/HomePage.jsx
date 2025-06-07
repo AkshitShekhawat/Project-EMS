@@ -42,7 +42,7 @@ function HomePage() {
           GetStarted With Demo
         </button>
 
-        {/* Image Gallery Section */}
+        {/* Image Section */}
         <div style={{
           display: 'flex',
           justifyContent: 'center',
