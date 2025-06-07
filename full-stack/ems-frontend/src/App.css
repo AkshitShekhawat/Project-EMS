@@ -13,14 +13,27 @@ body, html, #root {
 .content-wrap {
   flex: 1;
 }
+
+/* For Footer */
 .footer {
-  background-color: black;
-  color: white;
+  background-color: #222222; /* Very dark gray (almost black) */
+  color: #eeeeee;            /* Light gray text for contrast */
+  padding: 16px 0;
   text-align: center;
-  padding: 16px;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.4px;
   width: 100%;
+  border-top: 1px solid #444444; /* Dark border */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3); /* stronger shadow */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.footer:hover {
+  background-color: #111111; /* Even darker on hover */
+  color: #ffffff;            /* Pure white text on hover */
+} 
 .signup-box {
   width: 100%;
   max-width: 400px;

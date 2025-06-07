@@ -25,7 +25,7 @@ function HomePage() {
       }}>
         <h1>Welcome to My <strong>Employee Management System</strong></h1>
         <p>Get Started By Signing Up or Logging In</p>
-        <button
+        <button className='login-signup-btn'
           onClick={handleGetStarted}
           style={{
             backgroundColor: 'red',
