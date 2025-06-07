@@ -89,3 +89,45 @@ body, html, #root {
 .modern-nav-link:hover::after {
   width: 100%;
 }
+
+/* EmployeeComponent Inhancement */
+
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+input.form-control {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+button.btn-success {
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.2);
+  transition: all 0.3s ease;
+}
+
+button.btn-success:hover {
+  background-color: #157347;
+  box-shadow: 0 6px 16px rgba(25, 135, 84, 0.3);
+}
