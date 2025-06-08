@@ -6,49 +6,41 @@ function ModernContactComponent() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      padding: '10px 20px',
-      background: '#f2f4f8'
+      padding: '40px 20px',
+      background: '#f2f4f8',
     }}>
       <div style={{
         width: '100%',
-        maxWidth: '520px',
+        maxWidth: '400px',
         backgroundColor: '#ffffff',
         padding: '30px',
-        borderRadius: '16px',
-        boxShadow: '0 8px 240px rgba(0, 0, 0, 0.1)',
-        fontFamily: 'Segoe UI, sans-serif'
+        borderRadius: '12px',
+        boxShadow: '0 0 30px rgba(0, 0, 0, 0.1)',
+        fontFamily: 'Segoe UI, sans-serif',
+        textAlign: 'center'
       }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '5px' }}>📬 Get in Touch</h2>
-        <p style={{ textAlign: 'center', color: '#555', marginBottom: '10px' }}>
-          We'd love to hear from you. Fill out the form below and we'll get back to you soon.
-        </p>
+        <h2 style={{
+          color: '#007bff',
+          fontWeight: '600',
+          marginBottom: '20px'
+        }}>
+          📬 Contact Us
+        </h2>
 
         <form>
-          <div style={{ marginBottom: '10px' }}>
-            <label style={{ display: 'block', marginBottom: '6px', fontWeight: '600' }}>Name</label>
-            <input
-              type="text"
-              placeholder="John Doe"
-              style={inputStyle}
-            />
+          <div style={{ marginBottom: '15px', textAlign: 'left' }}>
+            <label style={labelStyle}>👤 Name</label>
+            <input type="text" placeholder="Enter your name" style={inputStyle} />
           </div>
 
-          <div style={{ marginBottom: '10px' }}>
-            <label style={{ display: 'block', marginBottom: '6px', fontWeight: '600' }}>Email</label>
-            <input
-              type="email"
-              placeholder="john@example.com"
-              style={inputStyle}
-            />
+          <div style={{ marginBottom: '15px', textAlign: 'left' }}>
+            <label style={labelStyle}>📧 Email Address</label>
+            <input type="email" placeholder="Enter your email" style={inputStyle} />
           </div>
 
-          <div style={{ marginBottom: '10px' }}>
-            <label style={{ display: 'block', marginBottom: '6px', fontWeight: '600' }}>Message</label>
-            <textarea
-              placeholder="Your message here..."
-              rows="4"
-              style={{ ...inputStyle, resize: 'none' }}
-            ></textarea>
+          <div style={{ marginBottom: '20px', textAlign: 'left' }}>
+            <label style={labelStyle}>💬 Message</label>
+            <textarea placeholder="Write your message..." rows="4" style={{ ...inputStyle, resize: 'none' }}></textarea>
           </div>
 
           <button type="submit" style={buttonStyle}>
@@ -62,23 +54,29 @@ function ModernContactComponent() {
 
 const inputStyle = {
   width: '100%',
-  padding: '12px 16px',
-  borderRadius: '8px',
+  padding: '10px 16px',
+  borderRadius: '25px',
   border: '1px solid #ccc',
-  fontSize: '16px',
+  fontSize: '15px',
   outline: 'none',
-  transition: 'border-color 0.2s ease-in-out',
+};
+
+const labelStyle = {
+  display: 'block',
+  fontWeight: '600',
+  fontSize: '14px',
+  marginBottom: '6px'
 };
 
 const buttonStyle = {
   width: '100%',
-  padding: '14px',
+  padding: '12px',
   backgroundColor: '#007bff',
   color: '#fff',
   fontSize: '16px',
   fontWeight: '600',
   border: 'none',
-  borderRadius: '100px',
+  borderRadius: '25px',
   cursor: 'pointer',
   transition: 'background-color 0.3s ease',
 };
