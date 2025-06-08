@@ -54,7 +54,7 @@ function HomePage() {
     // image ratio needed to fix in designed box is 842 X 414
     // { src: '/images/button2.png', alt: 'Login', action: () => navigate('/login') },
     { src: '/images/buimg.png', alt: 'Signup', action: () => alert('Coming Soon!') },
-    { src: '/images/buimg2.png', alt: 'Login', action: () => alert('Coming Soon!') },
+    { src: '/images/buimg2.png', alt: 'employees', action: () => navigate('/employees') },
     { src: '/images/buimg3.png', alt: 'Explore Features', action: () => alert('Coming Soon!') },
     { src: '/images/buimg4.png', alt: 'Explore Features', action: () => alert('Coming Soon!') },
     // Add more as needed
