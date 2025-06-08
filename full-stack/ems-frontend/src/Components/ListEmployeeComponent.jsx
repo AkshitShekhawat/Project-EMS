@@ -47,7 +47,9 @@ const ListEmployeeComponent = () => {
   <button className="btn btn-primary me-3" onClick={addNewEmployee}>
     + Add Employee
   </button>
-  <h2 className="text-center flex-grow-1">List of Employees</h2>  
+  <div className='employee-header'>
+  <h2 className="text-center flex-grow-1">List of Employees</h2>
+  </div>
 </div>
 
       <div className="table-responsive">

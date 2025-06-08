@@ -144,3 +144,28 @@ button.btn-success:hover {
   background-color: #157347;
   box-shadow: 0 6px 16px rgba(25, 135, 84, 0.3);
 }
+
+/* List of Employees */
+
+.employee-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-left: 12px;
+  border-left: 6px solid #007bff; /* Blue accent bar */
+  background-color: #f8f9fa;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.employee-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
