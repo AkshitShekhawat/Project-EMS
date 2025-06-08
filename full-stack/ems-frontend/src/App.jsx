@@ -8,6 +8,7 @@ import ListEmployeeComponent from './Components/ListEmployeeComponent';
 import HomePage from './Components/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ModernContactComponent from './Components/ModernContactComponent';
+import LoginComponent from './Components/LoginComponent';
 
 function App() {
   return (
@@ -77,6 +78,17 @@ function App() {
               <>
                 <HeaderComponent />
                 <div className="content-wrap"><SignupComponent /></div>
+                <FooterComponent />
+              </>
+            }
+          />
+
+          <Route
+            path='/login'
+            element={
+              <>
+                <HeaderComponent />
+                <div className="content-wrap"><LoginComponent/></div>
                 <FooterComponent />
               </>
             }
