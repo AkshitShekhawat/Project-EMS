@@ -17,7 +17,7 @@ function HeaderComponent() {
   <Link to='/' className="nav-link-custom">Home</Link>
   <Link to="/about" className="nav-link-custom">About</Link>
   <Link to="/contact" className="nav-link-custom">Contact</Link>
-  <Link to="/signup" className="login-signup-btn">
+  <Link to="/login" className="login-signup-btn">
     Login / SignUp
   </Link>
 </div>

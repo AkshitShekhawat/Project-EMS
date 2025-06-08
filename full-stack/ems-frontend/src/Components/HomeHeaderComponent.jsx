@@ -30,7 +30,7 @@ function HomeHeaderComponent() {
 
           {/* Right: Login/SignUp */}
           <div>
-            <Link to="/signup" className="login-signup-btn">
+            <Link to="/login" className="login-signup-btn">
                 Login / SignUp
               </Link>
           </div>
