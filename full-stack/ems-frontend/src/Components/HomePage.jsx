@@ -42,6 +42,50 @@ function HomePage() {
           GetStarted With Demo
         </button>
 
+        {/* Button-style image section */}
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  flexWrap: 'wrap',
+  gap: '20px',
+  marginTop: '30px'
+}}>
+  {[ 
+    // image ratio needed to fix in designed box is 842 X 414
+    // { src: '/images/button2.png', alt: 'Login', action: () => navigate('/login') },
+    { src: '/images/buimg.png', alt: 'Signup', action: () => alert('Coming Soon!') },
+    { src: '/images/buimg2.png', alt: 'Login', action: () => alert('Coming Soon!') },
+    { src: '/images/buimg3.png', alt: 'Explore Features', action: () => alert('Coming Soon!') },
+    { src: '/images/buimg4.png', alt: 'Explore Features', action: () => alert('Coming Soon!') },
+    // Add more as needed
+  ].map((btn, index) => (
+    <div key={index}
+      onClick={btn.action}
+      style={{
+        cursor: 'pointer',
+        borderRadius: '12px',
+        overflow: 'hidden',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.2s',
+        width: '180px'
+      }}
+      onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
+      onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+    >
+      <img
+        src={btn.src}
+        alt={btn.alt}
+        style={{
+          width: '100%',
+          height: '90px',
+          display: 'block'
+        }}
+      />
+    </div>
+  ))}
+</div>
+<br/>
+
         {/* Image Section */}
         <div style={{
           display: 'flex',
@@ -54,8 +98,8 @@ function HomePage() {
             <div key={index} style={{
               borderRadius: '12px',
               overflow: 'hidden',
-              boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-              width: '200px'
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+              width: '235px'
             }}>
               <img
                 src={`/images/img${img}.png`}
@@ -67,6 +111,7 @@ function HomePage() {
                 }}
               />
             </div>
+
           ))}
         </div>
       </div>

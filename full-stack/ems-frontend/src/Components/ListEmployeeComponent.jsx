@@ -44,7 +44,7 @@ const ListEmployeeComponent = () => {
   <div className="card shadow-sm">
     <div className="card-body">
       <div className="d-flex justify-content-start align-items-center mb-3">
-  <button className="btn btn-primary me-3" onClick={addNewEmployee}>
+  <button className="login-signup-btn me-3" onClick={addNewEmployee}>
     + Add Employee
   </button>
   <div className='employee-header'>
