@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // ✅ Make sure axios is installed
 
 const LoginComponent = () => {
   const [loginData, setLoginData] = useState({
@@ -7,6 +8,7 @@ const LoginComponent = () => {
     password: '',
   });
 
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -14,12 +16,27 @@ const LoginComponent = () => {
     setLoginData({ ...loginData, [name]: value });
   };
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // TODO: Add login logic here using AuthService
-    console.log(loginData);
-    // On success:
-    // navigate("/dashboard");
+    setError(''); // reset error
+
+    try {
+      const response = await axios.post('http://localhost:8080/api/auth/login', {
+        usernameOrEmail: loginData.identifier, // map frontend field to backend expected name
+        password: loginData.password,
+      });
+
+      console.log('Login success:', response.data);
+
+      // Save user info if needed (optional)
+      // localStorage.setItem("user", JSON.stringify(response.data));
+
+      // ✅ Navigate to dashboard or home
+      navigate('/dashboard');
+    } catch (err) {
+      console.error('Login failed:', err);
+      setError(err.response?.data || 'Login failed. Please try again.');
+    }
   };
 
   return (
@@ -28,6 +45,11 @@ const LoginComponent = () => {
         <h3 className="text-center mb-4">
           🔐 <strong>Login to Your Account</strong>
         </h3>
+
+        {/* ✅ Error message */}
+        {error && (
+          <div className="alert alert-danger py-2 text-center">{error}</div>
+        )}
 
         <form onSubmit={handleLogin}>
           <div className="form-group mb-3">
