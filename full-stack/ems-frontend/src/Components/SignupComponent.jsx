@@ -34,13 +34,13 @@ const SignupComponent = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-3">
-          <label className="form-label fw-semibold">👤 User Name</label>
+          <label className="form-label fw-semibold">👤 Name</label>
           <input
             type="text"
             className="form-control rounded-pill px-3"
             name="name"
             onChange={handleChange}
-            placeholder="Enter your name"
+            placeholder="Enter your full name"
             required
           />
         </div>
