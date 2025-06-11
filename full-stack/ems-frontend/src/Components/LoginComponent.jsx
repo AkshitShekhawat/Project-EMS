@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios'; // ✅ Make sure axios is installed
+import axios from 'axios';
 
 const LoginComponent = () => {
   const [loginData, setLoginData] = useState({
@@ -18,21 +18,22 @@ const LoginComponent = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(''); // reset error
+    setError('');
 
     try {
       const response = await axios.post('http://localhost:8080/api/auth/login', {
-        usernameOrEmail: loginData.identifier, // map frontend field to backend expected name
+        usernameOrEmail: loginData.identifier,
         password: loginData.password,
       });
 
       console.log('Login success:', response.data);
 
-      // Save user info if needed (optional)
-      // localStorage.setItem("user", JSON.stringify(response.data));
+      // ✅ Store login status
+      localStorage.setItem('isLoggedIn', 'true');
 
-      // ✅ Navigate to dashboard or home
+      // ✅ Redirect and refresh the UI to update the header
       navigate('/dashboard');
+      window.location.reload(); // force HomeHeaderComponent to re-check login
     } catch (err) {
       console.error('Login failed:', err);
       setError(err.response?.data || 'Login failed. Please try again.');
@@ -46,7 +47,6 @@ const LoginComponent = () => {
           🔐 <strong>Login to Your Account</strong>
         </h3>
 
-        {/* ✅ Error message */}
         {error && (
           <div className="alert alert-danger py-2 text-center">{error}</div>
         )}

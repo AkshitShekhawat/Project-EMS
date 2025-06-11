@@ -1,9 +1,10 @@
 import './App.css';
+import HomeHeaderComponent from './Components/HomeHeaderComponent';
+import DashboardComponent from './Components/DashboardComponent';
 import SignupComponent from './Components/SignupComponent';
 import AboutComponent from './Components/AboutComponent';
 import EmployeeComponent from './Components/EmployeeComponent';
 import FooterComponent from './Components/FooterComponent';
-import HeaderComponent from './Components/HeaderComponent';
 import ListEmployeeComponent from './Components/ListEmployeeComponent';
 import HomePage from './Components/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -24,7 +25,7 @@ function App() {
             path='/employees'
             element={
               <>
-                <HeaderComponent />
+                <HomeHeaderComponent />
                 <div className="content-wrap"><ListEmployeeComponent /></div>
                 <FooterComponent />
               </>
@@ -34,7 +35,7 @@ function App() {
             path='/add-employee'
             element={
               <>
-                <HeaderComponent />
+                <HomeHeaderComponent />
                 <div className="content-wrap"><EmployeeComponent /></div>
                 <FooterComponent />
               </>
@@ -44,7 +45,7 @@ function App() {
             path='/edit-employee/:id'
             element={
               <>
-                <HeaderComponent />
+                <HomeHeaderComponent />
                 <div className="content-wrap"><EmployeeComponent /></div>
                 <FooterComponent />
               </>
@@ -56,7 +57,7 @@ function App() {
             path='/about'
             element={
               <>
-                <HeaderComponent />
+                <HomeHeaderComponent />
                 <div className="content-wrap"><AboutComponent /></div>
                 <FooterComponent />
               </>
@@ -66,7 +67,7 @@ function App() {
             path='/contact'
             element={
               <>
-                <HeaderComponent />
+                <HomeHeaderComponent />
                 <div className="content-wrap"><ModernContactComponent /></div>
                 <FooterComponent />
               </>
@@ -76,7 +77,7 @@ function App() {
             path='/signup'
             element={
               <>
-                <HeaderComponent />
+                <HomeHeaderComponent />
                 <div className="content-wrap"><SignupComponent /></div>
                 <FooterComponent />
               </>
@@ -87,12 +88,25 @@ function App() {
             path='/login'
             element={
               <>
-                <HeaderComponent />
+                <HomeHeaderComponent />
                 <div className="content-wrap"><LoginComponent/></div>
                 <FooterComponent />
               </>
             }
           />
+
+           <Route
+  path="/dashboard"
+  element={
+    <>
+      <HomeHeaderComponent /> {/* 🔐 Dashboard header with Logout */}
+      <div className="content-wrap">
+        <DashboardComponent />
+      </div>
+      <FooterComponent /> {/* Optional, if you want footer here */}
+    </>
+  }
+/>
         </Routes>
       </BrowserRouter>
     </div>
