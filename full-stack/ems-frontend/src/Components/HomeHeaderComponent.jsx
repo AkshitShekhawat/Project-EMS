@@ -34,8 +34,13 @@ function HomeHeaderComponent() {
               <Link to="/" className="nav-link-custom">Home</Link>
               <a href="#services" className="nav-link-custom">Services</a>
               <a href="#gallery" className="nav-link-custom">Gallery</a>
+              
               <Link to="/about" className="nav-link-custom">About</Link>
               <Link to="/contact" className="nav-link-custom">Contact</Link>
+              {/* ✅ Show Dashboard link only when logged in */}
+              {isLoggedIn && (
+              <Link to="/employees" className="nav-link-custom">Dashboard</Link>
+            )}
             </div>
           </div>
 

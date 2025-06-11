@@ -1,4 +1,5 @@
 import './App.css';
+import DashboardComponent from './Components/DashboardComponent';
 import HomeHeaderComponent from './Components/HomeHeaderComponent';
 import SignupComponent from './Components/SignupComponent';
 import AboutComponent from './Components/AboutComponent';
@@ -93,6 +94,7 @@ function App() {
               </>
             }
           />
+          <Route path="/dashboard" element={<DashboardComponent />} />
         </Routes>
       </BrowserRouter>
     </div>
