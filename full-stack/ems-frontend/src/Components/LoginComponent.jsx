@@ -32,7 +32,7 @@ const LoginComponent = () => {
       localStorage.setItem('isLoggedIn', 'true');
 
       // ✅ Redirect and refresh the UI to update the header
-      navigate('/dashboard');
+      navigate('/employees');
       window.location.reload(); // force HomeHeaderComponent to re-check login
     } catch (err) {
       console.error('Login failed:', err);

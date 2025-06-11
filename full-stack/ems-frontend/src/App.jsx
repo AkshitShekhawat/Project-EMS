@@ -1,6 +1,5 @@
 import './App.css';
 import HomeHeaderComponent from './Components/HomeHeaderComponent';
-import DashboardComponent from './Components/DashboardComponent';
 import SignupComponent from './Components/SignupComponent';
 import AboutComponent from './Components/AboutComponent';
 import EmployeeComponent from './Components/EmployeeComponent';
@@ -94,19 +93,6 @@ function App() {
               </>
             }
           />
-
-           <Route
-  path="/dashboard"
-  element={
-    <>
-      <HomeHeaderComponent /> {/* 🔐 Dashboard header with Logout */}
-      <div className="content-wrap">
-        <DashboardComponent />
-      </div>
-      <FooterComponent /> {/* Optional, if you want footer here */}
-    </>
-  }
-/>
         </Routes>
       </BrowserRouter>
     </div>
