@@ -33,7 +33,7 @@ function HomeHeaderComponent() {
             <div className="d-flex gap-3 nav-menu">
               <Link to="/" className="nav-link-custom">Home</Link>
               <a href="#services" className="nav-link-custom">Services</a>
-              <a href="#gallery" className="nav-link-custom">Gallery</a>
+              <Link to="/gallery" className="nav-link-custom">Gallery</Link>
               
               <Link to="/about" className="nav-link-custom">About</Link>
               <Link to="/contact" className="nav-link-custom">Contact</Link>

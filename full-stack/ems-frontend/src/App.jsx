@@ -10,6 +10,7 @@ import HomePage from './Components/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ModernContactComponent from './Components/ModernContactComponent';
 import LoginComponent from './Components/LoginComponent';
+import GalleryComponent from './Components/GalleryComponent';
 
 function App() {
   return (
@@ -59,6 +60,17 @@ function App() {
               <>
                 <HomeHeaderComponent />
                 <div className="content-wrap"><AboutComponent /></div>
+                <FooterComponent />
+              </>
+            }
+          />
+
+          <Route
+            path='/gallery'
+            element={
+              <>
+                <HomeHeaderComponent />
+                <div className="content-wrap"><GalleryComponent /></div>
                 <FooterComponent />
               </>
             }
